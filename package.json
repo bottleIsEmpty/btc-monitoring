@@ -1,0 +1,25 @@
+{
+  "name": "btc-monitoring",
+  "version": "1.0.0",
+  "description": "Btc price \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bTC\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b\u001b[C\u001b[Dminitoring and email-notificayions\u001b[Dtions\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bEM",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bottleIsEmpty/btc-monitoring.git"
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "author": "Alexandr Bobko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bottleIsEmpty/btc-monitoring/issues"
+  },
+  "homepage": "https://github.com/bottleIsEmpty/btc-monitoring#readme",
+  "dependencies": {
+    "nodemailer": "^4.6.4"
+  }
+}
