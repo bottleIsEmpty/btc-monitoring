@@ -9,7 +9,7 @@ class BitcoinInformer extends EventEmmiter {
         this.sourceURL = config.source.url;
     }
 
-    updateCourse() {
+    updateExchangeRate() {
         let req = https.get(this.sourceURL, (res) => {
 
             let response = '';
@@ -20,9 +20,7 @@ class BitcoinInformer extends EventEmmiter {
             
             res.on('end', () => {
                 response = JSON.parse(response);
-                this.currentCourse = response.USD.last;
-
-                this.emit('courseUpdated', response.USD.last);
+                this.emit('exchangeRateUpdated', response.USD.last);
             });
         });
 
@@ -32,4 +30,4 @@ class BitcoinInformer extends EventEmmiter {
     }
 }
 
-module.exports = BitcoinInformer;
+module.exports = new BitcoinInformer;
