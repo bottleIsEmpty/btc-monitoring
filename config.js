@@ -17,10 +17,13 @@ module.exports = {
 
     // Порог, ниже которого будут приходить оповещения 
     threshlold: 5300,
+    
+    // Интервал проверки (минут)
+    updateInterval: 60,
+
+    // Email отправителя
+    senderEmail: 'yourfavouritebitcoinbot@gmail.com',
 
     // Email, на который будут приходить оповещения
     destinationEmail: 'sasha.bobcko@gmail.com',
-
-    // Интервал проверки (минут)
-    updateInterval: 60
 }

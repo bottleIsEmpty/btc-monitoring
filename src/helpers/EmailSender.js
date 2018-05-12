@@ -5,7 +5,7 @@ let transporter = nodemailer.createTransport(config.SMTPSettings);
 
 function sendEmail(course, threshold = config.threshlold) {
     let emailOptions = {
-        from: 'yourbitcoinbot@gmail.com', 
+        from: config.senderEmail, 
         to: config.destinationEmail, 
         subject: `Курс Bitcoin на ${new Date().toLocaleString('ru-RU')}`,
         text: `Внимание! Курс BTC упал ниже ${threshold}! Текущий курс: ${course}! Не упустите свой шанс!`,
